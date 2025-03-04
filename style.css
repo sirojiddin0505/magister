@@ -1,5 +1,13 @@
+*{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Roboto;
+    list-style: none;
+    text-decoration: none;
+}
 .container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0;
     border: 1px solid red;
@@ -8,30 +16,33 @@
 .header{
      background-color: line;
 }
+.header__list{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.header__item{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header__link{
+    font-family: inter;
+    font-size: 25px;
+    color: rgba(18, 20, 29, 1);
+}
+.header__img{
+    width: 60px;
+    height: 60px;
+}
 .header__title{
     font-size: 24px;
     line-height: 30px;
     font-family: inter;
 }
-.header__img{
-    width: 55px;
-    height: 55px;
-}
-.header__list{
-    list-style: none;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-.header__item{
-    margin: 1px 20px;
-    font-family: inter;
-    font-size: 16px;
-}
 .header__btn{
+    padding: 16px 40px;
     background-color: rgba(17, 30, 82, 1);
-    width: 140px;
-    height: 45px;
     font-size: 16px;
     font-family: inter;
     line-height: 24px;
@@ -47,33 +58,36 @@
     transition: all 1.2s;
 }
 .header__lists{
-    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .header__pic{
-    width: 500px;
-    height: 400px;
+    max-width: 550px;
+    height: 500px;
+    /* background: linear-gradient(148.79deg, #f82c2c 12.9%, #ec874e 29.15%, #e78b20 41.54%, #6c3df4 54.7%, #ff2633 70.18%, #ff1818 87.21%); */
+    /* filter: blur(70px); */
+    border-radius: 250px 280px 300px 100px;
 }
 .header__subtitle{
     font-family: inter;
     font-size: 70px;
-    font-weight: 400;
+    font-weight: 500;
 }
 .header__text{
     font-size: 20px;
     font-family: inter;
+    padding: 20px 0;
 }
 .header__button{
-    width: 280px;
-    height: 45px;
+    padding: 20px 50px 20px 24px;
     font-size: 16px;
     background-color: rgba(255, 201, 71, 1);
     border: none;
     border-radius: 7px;
     color: white;
     transition: 1.1s;
+    cursor: pointer;
 }
 .header__button:active{
     background-color: white;
@@ -189,7 +203,6 @@
     color: white;
 }
 .footer__text{
-    font-family: Roboto;
     font-size: 16px;
     color: white;
     font-weight: 400;
@@ -338,4 +351,26 @@
     align-items: center;
     color: blue;
     margin: 5px 7px;
+}
+
+@media only screen and (max-width:1170px) {
+    .header__item{
+        gap: 10px;
+    }
+    
+}
+@media only screen and (max-width:1020px) {
+    .header__list{
+        justify-content: space-around;
+    }
+    .header__link{
+        display: none;
+    }
+    .header__subtitle{
+        font-size: 55px;
+    }
+    .header__pic{
+        max-width: 400px;
+    }
+    
 }
