@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
     <div class="header">
         <div class="container header__container">
             <ul class="header__list">
-                <li class="header__item" style="gap:12px;">
+                <li class="header__item left" style="gap:12px;">
                     <img src="./image 261.svg" alt="logo" class="header__img">
                     <h1 class="header__title">Magister.edu.uz</h1>
                 </li>
@@ -43,7 +44,7 @@
 
     <!-- -----------------------hero-------------------------------------- -->
      <div class="hero">
-        <div class="container">
+        <div class="container hero__container">
             <h1 class="hero__title">Magistraturaga hujjat topshiruvchilar uchun imtiyozlar</h1>
             <ul class="hero__list" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
                 <li class="hero__item">
@@ -62,25 +63,22 @@
                     <p class="hero__text">9- va 11- sinflarni maxsus maktablara ta’lim olgan ko‘zi ojiz fuqarolar<p>
                 </li>
             </ul>
-            <div class="hero-box">
-                <div class="container">
-                    <h2 class="box__title">Qabul tizimdan qanday foydalaniladi?</h2>
-                    <p class="box__text">Saytimiz yoki mobil ilovamizdan ro‘yxatdan o‘ting so‘ngra o‘zingiz istagan kurslardan birini tanlab, to‘lovni amalga oshiring va yangi bilimlar olish imkoniyatiga ega bo‘ling.</p>
-                <img  width="1200px" height="600px" src="./images/Video.svg" alt=""  data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
-                </div>
+            <div class="hero__box">
+                <h2 class="box__title">Qabul tizimdan qanday foydalaniladi?</h2>
+                <p class="box__text">Saytimiz yoki mobil ilovamizdan ro‘yxatdan o‘ting so‘ngra o‘zingiz istagan kurslardan birini tanlab, to‘lovni amalga oshiring va yangi bilimlar olish imkoniyatiga ega bo‘ling.</p>
             </div>
+            <a target="_blank" href="https://www.youtube.com/watch?v=OLzxzhYdidE&pp=ygUNbWFnaXN0ciBxYWJ1bA%3D%3D" class="hero__link"><img width="1300vw" height="600px" src="./images/Video.svg" alt="#"  data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200"></a>
         </div>
      </div>
 
      <!-- ------------------------main-------------------------------------- -->
      <div class="main">
-        <div class="container">
+        <div class="container main__container">
             <h2 class="main__title">Ariza topshirish va uni qabul qilish jarayoni</h2>
             <ul class="main__list" data-aos="fade-up-left" data-aos-duration="700" data-aos-delay="300">
                 <li class="main__item">
                     <img src="./images/1.svg" alt="#" class="main__img">
-                    <h3 class="main__subtitle">Tizimdan royxatdan
-                        o’tiladi va ariza topshirladi</h3>
+                    <h3 class="main__subtitle">Tizimdan royxatdano’tiladi va ariza topshirladi</h3>
                     <p class="main__text">Tizimdan oneid orqali royxatdan oting va shaxsiy malumotlaringizni toldring va ariza qoldiring.</p>
                 </li>
                 <li class="main__item">
@@ -90,8 +88,7 @@
                 </li>
                 <li class="main__item">
                     <img src="./images/3.svg" alt="#" class="main__img">
-                    <h3 class="main__subtitle">Tizimdan royxatdan
-                        o’tiladi va ariza topshirladi</h3>
+                    <h3 class="main__subtitle">Tizimdan royxatdano’tiladi va ariza topshirladi</h3>
                     <p class="main__text">Tizimdan oneid orqali royxatdan oting va shaxsiy malumotlaringizni toldring va ariza qoldiring.</p>
                 </li>
             </ul>
@@ -100,16 +97,30 @@
 
      <!-- -------------------------section--------------------------------- -->
       <div class="section">
-        <div class="container">
+        <div class="container section__container">
             <h2 class="section__title">OTMlar va yonalishlar kesimida arizalar statistikasi</h2>
             <p class="section__text">Filtrni tozalash</p>
-           <div class="section-box">
-             <input placeholder="OTM nomini tanlang" type="text" class="text"> <input placeholder="Talim tilini tanlang" type="text" class="text"> <button class="section__btn">Natijani qo'llash</button>
-           </div>
-           <div class="section-boxs">
+           <div class="section__box">
+            <select name="change" id="#">
+                <option value="1">OTM Nomini tanlang</option>
+                <option value="1">Toshkent Axborot Texnologiyalari Universiteti</option>
+                <option value="1">Namangan Davlat Universiteti</option>
+                <option value="1">Farg'ona Davlat Universiteti</option>
+                <option value="1">O'zbekiston Milliy Universiteti</option>
+                <option value="1">Namangan Davlat Chet Tillari Instituti</option>
+                <option value="1">Toshkent Davlat Agrar Instituti</option>
+            </select>
+            <select name="change" id="#">
+                <option value="1">Ta'lim tilini tanlang</option>
+                <option value="1">O'zbek tili</option>
+                <option value="1">Rus tili</option>
+                <option value="1">Qoraqalpoq tili</option>
+            </select>
+            <button class="section__btn"><i class="fa-solid fa-repeat fa-fade" style="color: #fafafa;"></i>Natijani qo'llash</button>
 
+             <!-- <input placeholder="OTM nomini tanlang" type="text" class="text">
+             <input placeholder="Talim tilini tanlang" type="text" class="text">  -->
            </div>
-
         </div>
       </div>
 

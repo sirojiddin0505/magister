@@ -98,16 +98,18 @@
 /* ---------------------hero---------------- */
 .hero__title{
     text-align: center;
-    font-size: 55px;
+    font-size: 3.8rem;
     font-family: inter;
     font-weight: 500;
     line-height: 72px;
     color: rgba(18, 20, 29, 1);
+    padding: 10px 70px;
 }
 .hero__list{
-    list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .hero__item{
     width: 300px;
@@ -122,25 +124,26 @@
     font-family: inter;
 }
 .hero__text{
-    width: 300px;
-    height: 84px;
-       
+    max-width: 300px;
+    height: 84px;     
+}
+.hero__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .box__title{
     font-family: Inter;
     font-size: 56px;
     font-weight: 500;
     line-height: 72px;
-    text-align: left;
-    width: 637px;
-    height: 144px;
-    top: 1626px;
-    left: 312px;
+    max-width: 637px;
 }
 .box__text{
     font-size: 18px;
     font-family: inter;
     line-height: 30px;
+    max-width: 600px;
 }
 /* --------------------main-------------------------- */
 .main__title{
@@ -148,16 +151,12 @@
     font-size: 50px;
     font-weight: 500;
     line-height: 72px;
-    text-align: left;
-    width: 856px;
-    height: 144px;
-    top: 72px;
-    left: 312px;
+    max-width: 856px;
 }
 .main__list{
-    list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .main__item{
     margin: 1px 10px;
@@ -167,23 +166,18 @@
     font-size: 21px;
     font-weight: 600;
     line-height: 28px;
-    text-align: left;
-    width: 300px;
+    max-width: 300px;
 }
 .main__text{
     font-family: Inter;
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    
+    max-width: 310px;
 }
 /* -----------------------footer-------------- */
 .footer{
     background-color: black;
-
 }
 .footer__list{
     list-style: none;
@@ -195,7 +189,6 @@
     margin: 10px 20px;
 }
 .footer__title{
-    font-family: Roboto;
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
@@ -210,13 +203,11 @@
     width: 250px;   
 }
 .footer__info{
-    font-family: Roboto;
     font-size: 16px;
     color: white;
     font-weight: 400;
     line-height: 24px;
     width: 250px;  
-    /* margin-top: 0px; */
 }
 /* -----------------section-------------- */
 .section__title{
@@ -238,26 +229,21 @@
 }
 .section-box{
     background-color: rgba(238, 239, 241, 1);
-    width: 1200px;
-    height: 100px;
+    /* width: 1200px;
+    height: 100px; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
-.text{
-    margin: 0 5px;
-    width: 450px;
-    height: 40px;
-}
 .section__btn{
-    width: 130px;
-    height: 40px;
+    padding: 8px 15px;
     color: white;
     background-color: rgba(47, 128, 237, 1);
     border: none;
-    border-radius: 2px;
-    font-size: 11px;
+    border-radius: 8px;
+    font-size: 17px;
     transition: all 0.2s;
+    cursor: pointer;
 }
 .section__btn:active{
     border: 2px solid rgba(47, 128, 237, 1);
@@ -357,6 +343,14 @@
     .header__item{
         gap: 10px;
     }
+    .hero__box{
+        flex-direction: column;
+        text-align: center;
+        row-gap: 30px;
+    }
+    .main__list{
+        justify-content: space-around;
+    }
     
 }
 @media only screen and (max-width:1020px) {
@@ -372,5 +366,49 @@
     .header__pic{
         max-width: 400px;
     }
+    .hero__list{
+        justify-content: space-around;
+        row-gap: 30px;
+    }
     
+}
+@media only screen and (max-width: 850px) {
+    .header__lists{
+        flex-direction: column;
+    }
+    .header__items{
+        text-align: center;
+    }
+    .hero__title{
+        font-size: 50px;
+        padding: 10px 0px;
+    }
+}
+@media only screen and (max-width:530px) {
+    .header__btn{
+        display: none;
+    }
+    .header__subtitle{
+        font-size: 35px;
+    }
+    .header__text{
+        font-size: 16px;
+    }
+    .header__pic{
+        max-width: 340px;
+        height: 300px;
+    }
+    .hero__title{
+        font-size: 40px;
+    }
+    .box__title{
+        font-size: 40px;
+    }
+    .box__text{
+        font-size: 16px;
+    }
+    .main__title{
+        font-size: 40px;
+        line-height: 55px;
+    }
 }
