@@ -2,7 +2,7 @@
     margin: 0;
     padding: 10px;
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: inter;
     list-style: none;
     text-decoration: none;
 }
@@ -10,7 +10,7 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 /* ------------------------header-------------------- */
 .header{
@@ -27,7 +27,6 @@
     gap: 40px;
 }
 .header__link{
-    font-family: inter;
     font-size: 25px;
     color: rgba(18, 20, 29, 1);
 }
@@ -38,24 +37,21 @@
 .header__title{
     font-size: 24px;
     line-height: 30px;
-    font-family: inter;
 }
 .header__btn{
     padding: 16px 40px;
     background-color: rgba(17, 30, 82, 1);
-    font-size: 16px;
-    font-family: inter;
+    font-size: 18px;
     line-height: 24px;
     color: white;
     border-radius: 4px;
     border: none;
-    transition: all 1.2s;
 }
 .header__btn:hover{
     color: rgba(17, 30, 82, 1);
     background-color: white;
     border: 2px solid rgba(17, 30, 82, 1);
-    transition: all 1.2s;
+    transition: all 0.8s;
 }
 .header__lists{
     display: flex;
@@ -65,18 +61,14 @@
 .header__pic{
     max-width: 550px;
     height: 500px;
-    /* background: linear-gradient(148.79deg, #f82c2c 12.9%, #ec874e 29.15%, #e78b20 41.54%, #6c3df4 54.7%, #ff2633 70.18%, #ff1818 87.21%); */
-    /* filter: blur(70px); */
     border-radius: 250px 280px 300px 100px;
 }
 .header__subtitle{
-    font-family: inter;
     font-size: 70px;
     font-weight: 500;
 }
 .header__text{
     font-size: 20px;
-    font-family: inter;
     padding: 20px 0;
 }
 .header__button{
@@ -99,7 +91,6 @@
 .hero__title{
     text-align: center;
     font-size: 3.8rem;
-    font-family: inter;
     font-weight: 500;
     line-height: 72px;
     color: rgba(18, 20, 29, 1);
@@ -133,7 +124,6 @@
     align-items: center;
 }
 .box__title{
-    font-family: Inter;
     font-size: 56px;
     font-weight: 500;
     line-height: 72px;
@@ -141,13 +131,11 @@
 }
 .box__text{
     font-size: 18px;
-    font-family: inter;
     line-height: 30px;
     max-width: 600px;
 }
 /* --------------------main-------------------------- */
 .main__title{
-    font-family: Inter;
     font-size: 50px;
     font-weight: 500;
     line-height: 72px;
@@ -162,57 +150,20 @@
     margin: 1px 10px;
 }
 .main__subtitle{
-    font-family: Inter;
     font-size: 21px;
     font-weight: 600;
     line-height: 28px;
     max-width: 300px;
 }
 .main__text{
-    font-family: Inter;
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
     max-width: 310px;
 }
-/* -----------------------footer-------------- */
-.footer{
-    background-color: black;
-}
-.footer__list{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.footer__item{
-    margin: 10px 20px;
-}
-.footer__title{
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-    width: 200px;
-    color: white;
-}
-.footer__text{
-    font-size: 16px;
-    color: white;
-    font-weight: 400;
-    line-height: 24px;
-    width: 250px;   
-}
-.footer__info{
-    font-size: 16px;
-    color: white;
-    font-weight: 400;
-    line-height: 24px;
-    width: 250px;  
-}
 /* -----------------section-------------- */
 .section__title{
-    font-family: Inter;
-    width: 700px;
+    max-width: 700px;
     font-size: 50px;
     font-weight: 500;
     line-height: 72px;
@@ -220,20 +171,30 @@
 }
 .section__text{
     color: red;
-    font-family: Inter;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     text-align: right;
     margin-right: 40px;    
 }
-.section-box{
+.section__box{
+    padding: 40px 20px;
     background-color: rgba(238, 239, 241, 1);
-    /* width: 1200px;
-    height: 100px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+select{
+    font-size: 20px;
+    padding: 10px 10px;
+    width: 400px;
+    outline: none;
+    border-radius: 8px;
+    opacity: 70%;
+}
+select:focus{
+    border: 1px solid #ccc;
+    /* background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important; */
 }
 .section__btn{
     padding: 8px 15px;
@@ -242,55 +203,44 @@
     border: none;
     border-radius: 8px;
     font-size: 17px;
-    transition: all 0.2s;
     cursor: pointer;
-}
-.section__btn:active{
-    border: 2px solid rgba(47, 128, 237, 1);
-    background-color: whitesmoke;
-    color: rgba(47, 128, 237, 1);
-    transition: all 0.2s;
-}
+}   
 /* ------------------link------------ */
 .links{
     text-decoration: none;
     background: linear-gradient(94.25deg, #2B59FF 0%, #BB2BFF 100%);
-    width: 900px;
-    height: 150px; 
-    margin:20px auto;
+    max-width: 1400px;
     border: none;
     border-radius: 10px;
+    padding: 15px 25px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .link__title{
     color: white;
     width: 500px;
 }
 .link__btn{
-    background-color: #9448d3;
-    border: 1px solid white;
-    border-radius: 5px;
+    background: fixed;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    width: 200px;
-    height: 50px;
+    padding: 0 15px 0 15px;
 }
 .btn__img{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
 .link__title{
-    font-family: Inter;
+    max-width: 500px;
     font-size: 32px;
     font-weight: 400;
-    line-height: 40px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;   
+    line-height: 40px;  
 }
 /* --------------news--------------------- */
 .news__list{
@@ -338,6 +288,40 @@
     color: blue;
     margin: 5px 7px;
 }
+/* -----------------------footer-------------- */
+.footer{
+    background-color: black;
+}
+.footer__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__item{
+    margin: 10px 20px;
+}
+.footer__title{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    width: 200px;
+    color: white;
+}
+.footer__text{
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    line-height: 24px;
+    width: 250px;   
+}
+.footer__info{
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    line-height: 24px;
+    width: 250px;  
+}
 
 @media only screen and (max-width:1170px) {
     .header__item{
@@ -350,6 +334,10 @@
     }
     .main__list{
         justify-content: space-around;
+    }
+    select{
+        width: 250px;
+        font-size: 16px;
     }
     
 }
@@ -370,6 +358,10 @@
         justify-content: space-around;
         row-gap: 30px;
     }
+    .section__btn{
+        font-size: 14px;
+        padding: 4px 10px;
+    }
     
 }
 @media only screen and (max-width: 850px) {
@@ -382,6 +374,20 @@
     .hero__title{
         font-size: 50px;
         padding: 10px 0px;
+    }
+    .section__title{
+        font-size: 32px;
+        line-height: 50px;
+    }
+    .section__box{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    select{
+        width: 400px;
+    }
+    .link__title{
+        font-size: 22px;
     }
 }
 @media only screen and (max-width:530px) {
@@ -410,5 +416,22 @@
     .main__title{
         font-size: 40px;
         line-height: 55px;
+    }
+    .section__title{
+        font-size: 25px;
+        line-height: 34px;
+    }
+    select{
+        width: 270px;
+    }
+    .links{
+        padding: 10px 2px;
+    }
+    .link__btn{
+        font-size: 16px;
+    }
+    .btn__img{
+        width: 40px;
+        height: 40px;
     }
 }
