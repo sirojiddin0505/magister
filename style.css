@@ -33,9 +33,10 @@
 .header__img{
     width: 60px;
     height: 60px;
+    padding: 0;
 }
 .header__title{
-    font-size: 24px;
+    font-size: 30px;
     line-height: 30px;
 }
 .header__btn{
@@ -356,6 +357,9 @@ select:focus{
     .header__item{
         gap: 10px;
     }
+    .header__btn{
+        padding: 10px 30px;
+    }
     .hero__box{
         flex-direction: column;
         text-align: center;
@@ -367,8 +371,7 @@ select:focus{
     select{
         width: 250px;
         font-size: 16px;
-    }
-    
+    } 
 }
 @media only screen and (max-width:1020px) {
     .header__list{
